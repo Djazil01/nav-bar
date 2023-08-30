@@ -3,12 +3,8 @@
   <head>
     <title>navbar</title>
     <meta charset="UTF-8" />
-    <meta name="viewport " content="width-device width-device" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylee.css" />
-    <script
-      src="https://example.com/fontawesome/v5.15.4/js/all.js"
-      data-auto-a11y="true"
-    ></script>
   </head>
   <body>
     <header>
@@ -23,7 +19,16 @@
             <li><a href="#">Info</a></li>
           </ul>
         </div>
+        <img class="menu-hamburger" src="/photo/menu-btn.png" alt="menu" />
       </nav>
     </header>
   </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
 </hml>
